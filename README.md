@@ -1,50 +1,34 @@
 # React + TypeScript + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# GUITARLA-TS
 
-Currently, two official plugins are available:
+[GUITARLA-TS](https://guitarcar.netlify.app) es una aplicación web desarrollada con TypeScript que permite a los usuarios explorar y comprar guitarras online. La aplicación incluye características como el listado de productos, detalles de cada guitarra, carrito de compras y gestión de órdenes.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Características
 
-## Expanding the ESLint configuration
+- **Listado de guitarras**: Explora diferentes modelos de guitarras con imágenes y precios.
+- **Detalles de producto**: Visualiza información detallada de cada guitarra.
+- **Carrito de compras**: Añade guitarras al carrito y realiza compras.
+- **Gestión de órdenes**: Visualiza y administra las órdenes realizadas.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Demo en Vivo
 
-- Configure the top-level `parserOptions` property like this:
+Puedes ver la aplicación en funcionamiento aquí: [GUITARLA-TS en Netlify](https://guitarcar.netlify.app).
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+## Tecnologías Utilizadas
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+- **TypeScript**: Añade tipado estático para mayor seguridad y mantenibilidad del código.
+- **React**: Biblioteca para la construcción de interfaces de usuario dinámicas.
+- **Node.js**: Plataforma para el backend de la aplicación.
+- **Express**: Framework para manejar rutas y peticiones HTTP en el backend.
+- **MySQL**: Base de datos relacional para almacenar productos, usuarios y órdenes.
+- **Sass**: Preprocesador de CSS para estilos más eficientes y estructurados.
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+## Instalación
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+Sigue los siguientes pasos para ejecutar el proyecto en tu entorno local:
+
+1. Clona este repositorio:
+   ```bash
+   git clone https://github.com/juanesj/Guitarla-TS.git
+
